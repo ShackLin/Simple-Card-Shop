@@ -1,0 +1,49 @@
+* {
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+      position: relative;
+}
+
+/* body {
+      background: linear-gradient(to left, #faffa4, #a4ffe4);
+} */
+
+.Container {
+      width: 500px;
+      margin: 0 auto;
+      top: 100px;
+}
+
+.Title {
+      font-size: 30px;
+      font-weight: 500;
+      color: black;
+      font-weight: 500;
+}
+
+.Content {
+      margin: 2rem 0;
+      text-align: left;
+}
+
+.Content span {
+      font-size: 24px;
+      font-weight: 600;
+      margin: 1rem 0;
+
+}
+
+.Content p {
+      margin: 1rem 0;
+      font-size: 20px;
+}
+
+.homeBtn {
+      background-color: #ffffff;
+      border: 1px solid #9f9f9f;
+      padding: 0.7rem;
+      cursor: pointer;
+      font-size: 15px;
+      margin: 0.5rem 0;
+}

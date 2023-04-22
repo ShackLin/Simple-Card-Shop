@@ -1,0 +1,160 @@
+* {
+    position: relative;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0
+}
+
+.wrapper {
+    top: 4rem;
+    border: 2px solid #b6b6b6;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 2fr));
+    margin-top: 30px;
+}
+
+.Container {
+    width: 250px;
+    margin: 1.5rem 2rem;
+}
+
+.Card {
+    box-shadow: 0 0 8px 8px #8e8e8e;
+    cursor: pointer;
+    border-radius: 12px;
+    height: 340px;
+    width: 250px;
+    margin: 1.5rem 0;
+    background-color: white;
+    transition: all 0.5s 0s;
+}
+
+.Card:hover {
+    box-shadow: 0 0 8px 10px #75ff77;
+    bottom: 5px;
+}
+
+.Card img {
+    width: 100%;
+    height: 200px;
+}
+
+.CardContent {
+    display: flex;
+    flex-direction: column;
+    top: 0.8rem;
+}
+
+.CardContent p {
+    margin: 0 auto;
+    top: 0.3rem;
+    font-weight: 400;
+}
+
+.CardContent span {
+    margin: 0 auto;
+    font-weight: 400;
+}
+
+.CardContet1 {
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+}
+
+@media screen and (max-width:310px) {
+    .wrapper {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 2fr));
+    }
+
+    .Card {
+        width: 60%;
+    }
+
+    .Card img {
+
+        height: 120px;
+    }
+
+    .CardContent span {
+        font-size: 10px;
+    }
+
+    .CardContet1 button {
+        width: 15px;
+        height: 15px;
+        display: block;
+    }
+
+    .CardContet1 p {
+        font-size: 10px;
+    }
+
+}
+
+.CardContet1 button {
+    margin: 0 0.5rem;
+}
+
+.CardCheck {
+    margin: 0 auto;
+    top: 0.8rem;
+}
+
+.Like {
+    font-weight: 400;
+    margin: 0 1rem;
+    background-color: #007dff;
+    padding: 0.3rem;
+    border: 1px solid #d2d2d2;
+    border-radius: 5px;
+    cursor: pointer;
+    color: white;
+}
+
+.Dislike {
+    font-weight: 400;
+    background-color: #007dff;
+    padding: 0.3rem;
+    border: 1px solid #d2d2d2;
+    border-radius: 5px;
+    cursor: pointer;
+    color: white;
+}
+
+@media screen and (max-width:310px) {
+    .Like {
+        font-size: 5px;
+    }
+
+    .Dislike {
+        font-size: 5px;
+    }
+}
+
+.ObserveObject {
+    margin: 30px auto;
+    border: 5px solid #f3f3f3;
+    border-top: 5px solid #60a917;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    animation: spin 2s linear infinite;
+}
+
+.backTop {
+    width: 100px;
+    height: 50px;
+    top: 500px;
+    right: 50px;
+    border-radius: 5px;
+    position: fixed;
+    cursor: pointer;
+    color: white;
+    background-color: black;
+    font-weight: 500;
+}
+
+.backTop:hover {
+    border: 2px solid white;
+}
