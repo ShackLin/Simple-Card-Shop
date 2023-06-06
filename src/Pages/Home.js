@@ -23,7 +23,7 @@ export default function Home() {
                 <p>We are currently selling photos from Taiwan, Germany, Austria and Japan. If you like them, please add them directly to Shopping Cart.<br />You can find more photos on the Search More subpage.</p>
                 <p>Your opinion is very important to us. Please take a few minutes to share your suggestion with us, thank you.</p>
                 <h3 className={style.formTitle}>Options Form</h3>
-                <input onKeyDown={handleInput} value={value} onChange={(e) => setValue(e.target.value)} className={style.input} />
+                <input onKeyDown={handleInput} value={value} onChange={(e) => setValue(e.target.value)} className={style.input} placeholder='Press down Enter show your options' />
                 <ul className={style.formContent}>
                     {contents.map((content, index) => <li key={index} className={style.formLi}>{content}</li>)}
                 </ul>
